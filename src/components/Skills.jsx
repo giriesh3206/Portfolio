@@ -1,7 +1,16 @@
 import styles from "../styles/Skills.module.css";
 
 export function Skills() {
-  const skillsArray = ["HTML", "CSS", "JavaScript", "React", "Python", "C", "C++", "DSA"];
+  const skillsArray = [
+    "React",
+    "Javascript",
+    "Python",
+    "DSA",
+    "HTML",
+    "CSS",
+    "C",
+    "C++",
+  ];
 
   return (
     <section className={styles.skills} id="skills">
@@ -9,8 +18,9 @@ export function Skills() {
         <h1>Skills</h1>
       </div>
       <p>
-        I constantly learn new and exciting concepts in computer science and web development. I try applying these concepts to solve real-world
-        problems. A few technologies I enjoy working with:
+        I constantly learn new and exciting concepts in computer science and web
+        development. I try applying these concepts to solve real-world problems.
+        A few technologies I enjoy working with:
       </p>
       <ul className={styles.skillsList}>
         {skillsArray.map((skill, index) => (
